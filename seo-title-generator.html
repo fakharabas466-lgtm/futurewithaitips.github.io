@@ -2,7 +2,7 @@
 <html>
 <head>
 
-<title>SEO Title Generator</title>
+<title>Future With AI Tips</title>
 
 <meta name="viewport"
 content="width=device-width, initial-scale=1.0">
@@ -12,41 +12,72 @@ content="width=device-width, initial-scale=1.0">
 body{
 font-family:Arial;
 background:#f4f4f4;
-padding:40px;
+padding:20px;
+margin:0;
+}
+
+header{
+text-align:center;
+padding:20px;
+}
+
+h1{
+color:#111;
+margin-bottom:10px;
+}
+
+p{
+color:#555;
+}
+
+.search-box{
+text-align:center;
+margin-bottom:30px;
+}
+
+.search-box input{
+width:90%;
+max-width:400px;
+padding:12px;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+.container{
+display:grid;
+grid-template-columns:1fr;
+gap:20px;
+max-width:800px;
+margin:auto;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
 text-align:center;
 }
 
-.box{
-background:white;
-padding:25px;
-max-width:500px;
-margin:auto;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
+.card h2{
+margin-top:0;
 }
 
-input{
-width:90%;
-padding:12px;
-margin-top:15px;
-border:1px solid #ccc;
-border-radius:5px;
-}
-
-button{
-margin-top:15px;
-padding:12px 20px;
+.button{
+display:inline-block;
+margin-top:10px;
+padding:10px 18px;
 background:black;
 color:white;
-border:none;
+text-decoration:none;
 border-radius:5px;
-cursor:pointer;
 }
 
-#result{
-margin-top:20px;
-font-size:18px;
-color:#333;
+footer{
+text-align:center;
+margin-top:40px;
+color:#777;
+font-size:14px;
 }
 
 </style>
@@ -55,58 +86,105 @@ color:#333;
 
 <body>
 
-<div class="box">
+<header>
 
-<h1>SEO Title Generator</h1>
+<h1>Future With AI Tips</h1>
 
-<p>Create SEO Friendly Blog Titles</p>
+<p>Free AI Tools For Bloggers, SEO Experts & Creators</p>
+
+</header>
+
+<div class="search-box">
 
 <input type="text"
-id="keyword"
-placeholder="Enter your keyword">
-
-<br>
-
-<button onclick="generateTitle()">
-
-Generate Title
-
-</button>
-
-<div id="result"></div>
+placeholder="Search AI Tools...">
 
 </div>
 
-<script>
+<div class="container">
 
-function generateTitle(){
+<div class="card">
 
-let keyword =
-document.getElementById("keyword").value;
+<h2>SEO Title Generator</h2>
 
-let titles = [
+<p>Create SEO Friendly Blog Titles Instantly</p>
 
-"10 Best " + keyword + " Tips You Need To Know",
+<a class="button"
+href="seo-title-generator.html">
 
-"Complete Guide To " + keyword + " For Beginners",
+Open Tool
 
-"How To Master " + keyword + " In 2026",
+</a>
 
-"Top Secrets About " + keyword + " Revealed",
+</div>
 
-"Best Free Tools For " + keyword
+<div class="card">
 
-];
+<h2>Fiverr Gig Title Generator</h2>
 
-let random =
-titles[Math.floor(Math.random()*titles.length)];
+<p>Generate Professional Fiverr Gig Titles</p>
 
-document.getElementById("result").innerHTML =
-random;
+<a class="button"
+href="fiverr-title-generator.html">
 
-}
+Open Tool
 
-</script>
+</a>
+
+</div>
+
+<div class="card">
+
+<h2>Meta Description Generator</h2>
+
+<p>Create SEO Friendly Meta Descriptions</p>
+
+<a class="button"
+href="meta-description-generator.html">
+
+Open Tool
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h2>YouTube Title Generator</h2>
+
+<p>Create Viral YouTube Titles</p>
+
+<a class="button"
+href="youtube-title-generator.html">
+
+Open Tool
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h2>AI Hashtag Generator</h2>
+
+<p>Generate Trending Hashtags Instantly</p>
+
+<a class="button"
+href="hashtag-generator.html">
+
+Open Tool
+
+</a>
+
+</div>
+
+</div>
+
+<footer>
+
+© 2026 Future With AI Tips
+
+</footer>
 
 </body>
 </html>
