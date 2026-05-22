@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fiverr Gig Title Generator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+font-family:Arial;
+background:#f4f4f4;
+padding:40px;
+text-align:center;
+}
+
+.box{
+background:white;
+padding:25px;
+max-width:500px;
+margin:auto;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+input{
+width:90%;
+padding:12px;
+margin-top:15px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+padding:12px 20px;
+margin-top:15px;
+background:black;
+color:white;
+border:none;
+border-radius:5px;
+}
+
+#result{
+margin-top:20px;
+font-size:18px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h1>Fiverr Gig Title Generator</h1>
+
+<p>Create SEO Friendly Fiverr Gig Titles</p>
+
+<input type="text" id="keyword" placeholder="Enter your service">
+
+<br>
+
+<button onclick="generateGig()">Generate Gig Title</button>
+
+<div id="result"></div>
+
+</div>
+
+<script>
+
+function generateGig(){
+
+let keyword =
+document.getElementById("keyword").value;
+
+let gigs = [
+
+"I Will Do Professional " + keyword,
+
+"I Will Create Amazing " + keyword + " For Your Business",
+
+"I Will Provide Fast And Accurate " + keyword,
+
+"I Will Be Your Expert " + keyword + " Assistant",
+
+"Professional " + keyword + " Service For Fiverr Buyers"
+
+];
+
+let random =
+gigs[Math.floor(Math.random()*gigs.length)];
+
+document.getElementById("result").innerHTML =
+random;
+
+}
+
+</script>
+
+</body>
+</html>
