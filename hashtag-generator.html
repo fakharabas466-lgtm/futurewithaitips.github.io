@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Hashtag Generator</title>
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+font-family:Arial;
+background:#f4f4f4;
+padding:40px;
+text-align:center;
+}
+
+.box{
+background:white;
+padding:25px;
+max-width:500px;
+margin:auto;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+input{
+width:90%;
+padding:12px;
+margin-top:15px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+padding:12px 20px;
+margin-top:15px;
+background:black;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+#result{
+margin-top:20px;
+font-size:18px;
+color:#333;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h1>AI Hashtag Generator</h1>
+
+<p>Generate Trending Hashtags Instantly</p>
+
+<input type="text"
+id="keyword"
+placeholder="Enter your topic">
+
+<br>
+
+<button onclick="generateTags()">
+
+Generate Hashtags
+
+</button>
+
+<div id="result"></div>
+
+</div>
+
+<script>
+
+function generateTags(){
+
+let keyword =
+document.getElementById("keyword").value;
+
+let tags =
+
+"#" + keyword +
+" #Trending #" + keyword +
+"Tips #" + keyword +
+"2026 #AI #" + keyword +
+"Guide";
+
+document.getElementById("result").innerHTML =
+tags;
+
+}
+
+</script>
+
+</body>
+</html>
